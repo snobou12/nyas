@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/nyas/static/css/main.a80ca59b.css",
+    "main.js": "/nyas/static/js/main.cac6651d.js",
+    "static/media/cat.png": "/nyas/static/media/cat.39b8f5236c36121de1d1.png",
+    "static/media/Pattern.png": "/nyas/static/media/Pattern.8b93e2127ee44e2a8146.png",
+    "static/media/Exo2.0-Thin.otf": "/nyas/static/media/Exo2.0-Thin.51c257bfa8ec3e0cfb4b.otf",
+    "index.html": "/nyas/index.html",
+    "main.a80ca59b.css.map": "/nyas/static/css/main.a80ca59b.css.map",
+    "main.cac6651d.js.map": "/nyas/static/js/main.cac6651d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a80ca59b.css",
+    "static/js/main.cac6651d.js"
+  ]
+}
