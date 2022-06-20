@@ -1,0 +1,146 @@
+
+.nya__card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 14px;
+	flex-wrap: wrap;
+	margin: 0 80px 80px 80px;
+	@media (max-width: 488px) {
+		margin: 0 0 80px 0;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+.nya {
+	cursor: pointer;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 320px;
+	height: 480px;
+	background-color: #f2f2f2;
+	border-radius: 11px;
+	z-index: 101;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 21px 51px;
+	background-color: #f2f2f2;
+	clip-path: polygon(14.7% 0, 105% 0, 100% 100%, 0 100%, 0 9.7%);
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+		background-image: url("../../assets/png/cat.png");
+		background-position: 50% 170%;
+		background-repeat: no-repeat;
+	}
+	&--sales {
+		pointer-events: none;
+		&:not(.nya_wmark) {
+			opacity: 0.5;
+		}
+	}
+}
+
+.nya__border {
+	clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+	position: relative;
+	width: 328px;
+	height: 488px;
+	background-color: var(--clr);
+	border-radius: 8px;
+	transition: ease background-color 0.5s;
+}
+.nya__utitle {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: #666666;
+}
+.nya__title {
+	font-style: normal;
+	font-weight: 700;
+	color: #000000;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin-bottom: 15px;
+	span {
+		&:first-child {
+			font-size: 48px;
+			line-height: 56px;
+		}
+		&:last-child {
+			font-size: 24px;
+			line-height: 28px;
+		}
+	}
+}
+.nya__description {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: #666666;
+}
+.nya__wmark {
+	position: absolute;
+	bottom: 16px;
+	right: 16px;
+	width: 80px;
+	height: 80px;
+	background: var(--clr);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	z-index: 101;
+	transition: ease background 0.5s;
+	span {
+		color: #ffffff;
+		font-weight: 400;
+
+		&:first-child {
+			font-size: 42px;
+			line-height: 50px;
+		}
+		&:last-child {
+			font-size: 21px;
+			line-height: 16px;
+			text-transform: uppercase;
+		}
+	}
+}
+.nya__dtitle {
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 15px;
+	color: #ffffff;
+
+	span {
+		color: #1698d9;
+
+		span {
+			cursor: pointer;
+
+			border-bottom: 2px dotted #1698d9;
+		}
+	}
+	&--sales {
+		color: #ffff66;
+	}
+}

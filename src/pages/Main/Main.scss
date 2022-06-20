@@ -1,0 +1,36 @@
+
+.main {
+	width: 100%;
+    min-height: 100vh;
+	background: url("../../assets/bg/Pattern.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:24px;
+
+}
+.main__title {
+	font-family: "Exo";
+	font-size: 36px;
+	line-height: 44px;
+	color: #ffffff;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.main__nyas {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+    
+    
+}
+
+.main__feauters{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
